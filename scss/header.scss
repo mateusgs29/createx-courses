@@ -1,0 +1,38 @@
+.header {
+  font-weight: 700;
+}
+
+.navbar {
+  padding: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar-dropdown {
+  text-align: center;
+  // background-color: rgba(141, 141, 141, 0.1);
+  a {
+    color: $gray800;
+  }
+  .btn {
+    display: block;
+    margin: 0.5em auto;
+  }
+}
+
+.btn-login {
+  color: $gray800;
+}
+
+.logo {
+  padding: 0.5em;
+}
+
+@media (min-width:768px) {
+  .navbar-dropdown {
+    .btn {
+      display: block;
+      margin: 0.5em;
+    }
+  }
+}
