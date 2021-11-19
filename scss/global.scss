@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+// COLORS
+$primary: #FF3F3A;
+$btn-gradient: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+$danger: #FF4242;
+$gray900: #1E212C;
+$gray800: #424551;
+$gray700: #787A80;
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.btn {
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.btn-gradient {
+  color: #fff;
+  background-image: $btn-gradient;
+}
