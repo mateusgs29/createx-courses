@@ -18,11 +18,38 @@ body {
 
 .btn {
   font-weight: 700;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   border-radius: 5px;
 }
 
 .btn-gradient {
   color: #fff;
   background-image: $btn-gradient;
+}
+
+.btn-outline-gradient {
+  position: relative;
+  span {
+    background-image: $btn-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    padding: 1px;
+    background: $btn-gradient;
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out; 
+    mask-composite: exclude; 
+  }
 }
