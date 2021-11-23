@@ -13,13 +13,20 @@
 
 .navbar-dropdown {
   text-align: center;
-  // background-color: rgba(141, 141, 141, 0.2);
+  background-color: #ffcfc6;
   a {
     color: $gray800;
   }
   .btn {
     display: block;
     margin: 0.5em auto;
+  }
+  @media (min-width: 768px) {
+    background-color: transparent;
+    .btn {
+      display: block;
+      margin: 0.5em;
+    }
   }
 }
 
@@ -29,13 +36,4 @@
 
 .logo {
   padding: 0.5em;
-}
-
-@media (min-width:768px) {
-  .navbar-dropdown {
-    .btn {
-      display: block;
-      margin: 0.5em;
-    }
-  }
 }
