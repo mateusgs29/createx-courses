@@ -4,24 +4,16 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1000px;
-  img {
+  img { 
     max-width: 500px;
     min-width: 300px;
   }
 }
 
-.about-content {
+.about-content {  
   color: $gray900;
   max-width: 400px;
   margin: auto;
-  h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  h1 {
-    font-weight: 900;
-    margin-bottom: 2rem;
-  }
   ul {
     list-style: url('../img/check.svg');
   }

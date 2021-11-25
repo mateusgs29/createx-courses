@@ -53,3 +53,15 @@ body {
     mask-composite: exclude; 
   }
 }
+
+.section {
+  color: $gray900;
+  h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h1 {
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+}
