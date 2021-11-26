@@ -3,7 +3,11 @@
 // COLORS
 $primary: #FF3F3A;
 $btn-gradient: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+$success: #03C3A4;
 $danger: #FF4242;
+$warning: #F89829; 
+$info: #5A87FC;
+$pink: #F52F6E;
 $gray900: #1E212C;
 $gray800: #424551;
 $gray700: #787A80;
@@ -56,6 +60,7 @@ body {
 
 .section {
   color: $gray900;
+  max-width: 1000px;
   h6 {
     text-transform: uppercase;
     font-weight: 700;
