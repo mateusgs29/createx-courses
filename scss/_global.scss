@@ -11,7 +11,7 @@ $pink: #F52F6E;
 $gray900: #1E212C;
 $gray800: #424551;
 $gray700: #787A80;
-
+$gray600: #9A9CA5;
 
 body {
   font-family: 'Lato', sans-serif;
@@ -29,6 +29,11 @@ body {
 .btn-gradient {
   color: #fff;
   background-image: $btn-gradient;
+  transition: all 1s ease;
+  &:hover {
+    color: #fff;
+    background-image: linear-gradient(55.95deg, #ec3c36 0%, #e95905 100%);
+  }
 }
 
 .btn-outline-gradient {
@@ -40,7 +45,7 @@ body {
     color: transparent;
   }
   &::before {
-    z-index: -1;
+    z-index: 1;
     content: "";
     position: absolute;
     top: 0;
@@ -55,6 +60,12 @@ body {
      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out; 
     mask-composite: exclude; 
+  }
+  &:hover {
+    span {
+      color: #fff;
+    }
+    background-image: $btn-gradient;
   }
 }
 
