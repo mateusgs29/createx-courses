@@ -1,0 +1,39 @@
+.benefits-nav {
+  .nav-link {
+    color: $gray600;
+    font-weight: 700;
+    &.active {
+      color: $primary;
+      background-color: transparent;
+      border: 1px solid $primary;
+    }
+  }
+}
+
+.benefits-tab-content {
+  &.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .tabpanel-info {
+    max-width: 450px;
+    h2 {
+      color: $gray900;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $gray800;
+      font-weight: 400;
+    }
+  }
+  .tabpanel-image {
+    max-width: 450px;
+  }
+}
