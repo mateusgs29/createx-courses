@@ -1,0 +1,68 @@
+.events {
+  background-image: url(../img/background2.png);
+  background-size: cover;
+  max-width: 100%;
+}
+
+.event-card {
+  @mixin title-subtitle {
+    color: $gray900;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 400;
+      color: $gray700;
+      font-size: .8rem;
+    }
+  }
+
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 20px auto;
+  position: relative;
+
+  .event-date {
+    display: flex;
+    align-items: center;
+    div {
+      @include title-subtitle;
+    }
+    .event-date-number {
+      color: $danger;
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin-right: 10px;
+    }
+  }
+  .event-info {
+    @include title-subtitle;
+    @media (min-width: 768px) {
+      flex: 1;
+      margin: 0 20px;
+    }
+  }
+
+  &:hover {
+    top: -4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.events-view-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h3 {
+    font-weight: 700;
+    color: $gray900;
+  }
+}
