@@ -26,7 +26,9 @@ const getData = () => {
             <div class="card my-2 my-md-3 course-card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img class="card-img" src=${course.img[0].url} alt=${course.img[0].title}>
+                  <div class="card-img">
+                    <img src=${course.img[0].url} alt=${course.img[0].title}>
+                  </div>
                 </div>
                 <div class="col-8">
                   <div class="card-body">
