@@ -62,17 +62,17 @@ const getDataTeam = () => {
 
 getDataTeam();
 
-$("#testimonials-carousel").slick({
+$(".testimonials-carousel").slick({
   dots: true,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  // prevArrow:
-  //   `<button class="btn rounded-circle btn-carousel testimonials-arrow prev-arrow">
-  //     <i class="fas fa-long-arrow-alt-left"></i>
-  //   </button>`,
-  // nextArrow:
-  //   `<button class="btn rounded-circle btn-carousel testimonials-arrow next-arrow">
-  //     <i class="fas fa-long-arrow-alt-right"></i>
-  //   </button>`,
+  prevArrow:
+    `<button class="btn rounded-circle btn-carousel testimonials-arrow prev-arrow">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </button>`,
+  nextArrow:
+    `<button class="btn rounded-circle btn-carousel testimonials-arrow next-arrow">
+      <i class="fas fa-long-arrow-alt-right"></i>
+    </button>`,
 });
