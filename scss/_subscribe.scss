@@ -1,0 +1,28 @@
+.subscribe {
+  background-image: url(../img/backgroundSubscribe.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+
+  div {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    form {
+      display: flex;
+      justify-content: center;
+      input {
+        flex: 1;
+      }  
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 100px;
+      form {
+        margin: 0 50px;
+      }
+    }
+  }
+}
