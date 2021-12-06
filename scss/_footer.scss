@@ -1,0 +1,94 @@
+.footer {
+  background-color: $gray900;
+}
+
+.footer-content {
+  color: #fff;
+  max-width: 1000px;
+  margin: auto;
+  h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    color: #fff;
+    opacity: 0.6;
+    line-height: 30px;
+    font-size: 0.8rem;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.footer-logo {
+  li {
+    display: inline;
+    margin-right: 15px;
+  }
+  p {
+    opacity: 0.6;
+  }
+}
+
+.footer-input {
+  $background: rgba(255, 255, 255, 0.08);
+  
+  input {
+    background-color: $background;
+    border: none;
+    border-right: transparent;
+    &:focus {
+      background-color: $background;
+    }
+  }
+  .btn {
+    padding: 0.375rem 0.75rem;
+    color: #fff;
+    background-color: $background;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-text {
+    font-size: 0.8rem;
+  }
+}
+
+.footer-copy {
+  background-color: #292c37;
+  div {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    p {
+      color: #fff;
+      font-weight: 400;
+      margin: 0;
+      i {
+        color: $danger;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
